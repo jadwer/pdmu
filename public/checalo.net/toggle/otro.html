@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: monospace;
+    }
+
+    .navbar {
+      margin: 10px;
+      border: 5px groove rgb(133, 133, 133);
+      background-color: rgb(197, 197, 197);
+      box-shadow: 0 0 5px black;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding: 10px;
+      display: flex;
+    }
+
+    @media screen and (max-width: 800px) {
+      ul {
+      flex-direction: column;
+      }
+    } 
+
+    .navbar__item {
+      text-align: center;
+      background-color: rgb(237, 245, 243);
+      text-shadow: 0 0 1px rgb(31, 31, 31);
+      display: inline-block;
+      border: 1px solid rgb(0, 0, 0);
+      padding: 10px;
+      margin: 5px;
+      font-size: 15px;
+      flex: 1;
+      transition-duration: 0.3s;
+    }
+
+    .navbar__item:hover {
+      border: 1px solid rgb(0, 0, 0);
+      box-shadow: 0 0 5px 1px rgb(26, 25, 25);
+      transform: scale(1.02);
+      background-color: rgb(255, 255, 255);
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar_list">
+      <li class="navbar__item">Texto</li>
+      <li class="navbar__item">Texto</li>
+      <li class="navbar__item">Texto</li>
+      <li class="navbar__item">Texto</li>
+    </ul>
+  </nav>
+</body>
+</html>

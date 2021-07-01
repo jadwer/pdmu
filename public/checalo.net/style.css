@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: aqua;
+}
+
+.padre{
+    padding: 50px;
+    margin: 100px;
+    background-color: rgb(94, 54, 133);
+}
+
+h2{
+    border: dashed  aqua 2px;
+
+display: block;
+
+    background-color: chartreuse;
+}

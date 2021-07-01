@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+			html {
+				line-height: 1.15;
+				-webkit-text-size-adjust: 100%;
+			}
+			body {
+				margin: 0;
+			}
+			main {
+				display: block;
+			}
+			h1 {
+				font-size: 2em;
+				margin: 0.67em 0;
+			}
+			hr {
+				box-sizing: content-box;
+				height: 0;
+				overflow: visible;
+			}
+			pre {
+				font-family: monospace, monospace;
+				font-size: 1em;
+			}
+			a {
+				background-color: transparent;
+			}
+			abbr[title] {
+				border-bottom: none;
+				text-decoration: underline;
+				text-decoration: underline dotted;
+			}
+			b,
+			strong {
+				font-weight: bolder;
+			}
+			code,
+			kbd,
+			samp {
+				font-family: monospace, monospace;
+				font-size: 1em;
+			}
+			small {
+				font-size: 80%;
+			}
+			sub,
+			sup {
+				font-size: 75%;
+				line-height: 0;
+				position: relative;
+				vertical-align: baseline;
+			}
+			sub {
+				bottom: -0.25em;
+			}
+			sup {
+				top: -0.5em;
+			}
+			img {
+				border-style: none;
+			}
+			button,
+			input,
+			optgroup,
+			select,
+			textarea {
+				font-family: inherit;
+				font-size: 100%;
+				line-height: 1.15;
+				margin: 0;
+			}
+			button,
+			input {
+				overflow: visible;
+			}
+			button,
+			select {
+				text-transform: none;
+			}
+			[type="button"],
+			[type="reset"],
+			[type="submit"],
+			button {
+				-webkit-appearance: button;
+			}
+			[type="button"]::-moz-focus-inner,
+			[type="reset"]::-moz-focus-inner,
+			[type="submit"]::-moz-focus-inner,
+			button::-moz-focus-inner {
+				border-style: none;
+				padding: 0;
+			}
+			[type="button"]:-moz-focusring,
+			[type="reset"]:-moz-focusring,
+			[type="submit"]:-moz-focusring,
+			button:-moz-focusring {
+				outline: 1px dotted ButtonText;
+			}
+			fieldset {
+				padding: 0.35em 0.75em 0.625em;
+			}
+			legend {
+				box-sizing: border-box;
+				color: inherit;
+				display: table;
+				max-width: 100%;
+				padding: 0;
+				white-space: normal;
+			}
+			progress {
+				vertical-align: baseline;
+			}
+			textarea {
+				overflow: auto;
+			}
+			[type="checkbox"],
+			[type="radio"] {
+				box-sizing: border-box;
+				padding: 0;
+			}
+			[type="number"]::-webkit-inner-spin-button,
+			[type="number"]::-webkit-outer-spin-button {
+				height: auto;
+			}
+			[type="search"] {
+				-webkit-appearance: textfield;
+				outline-offset: -2px;
+			}
+			[type="search"]::-webkit-search-decoration {
+				-webkit-appearance: none;
+			}
+			::-webkit-file-upload-button {
+				-webkit-appearance: button;
+				font: inherit;
+			}
+			details {
+				display: block;
+			}
+			summary {
+				display: list-item;
+			}
+			template {
+				display: none;
+			}
+			[hidden] {
+				display: none;
+			}
+
+			/* Fin de Normalize */
+
+			* {
+				box-sizing: border-box;
+				font-family: monospace;
+				font-size: 15px;
+				font-weight: 700;
+			}
+
+			.center {
+				background-color: rgb(245, 241, 241);
+				display: flex;
+				height: 100vh;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.container {
+				padding: 20px;
+				width: 450px;
+				height: 500px;
+				border: 1px solid black;
+				background-color: rgb(201, 201, 201);
+				text-align: center;
+				box-shadow: 10px 10px 5px rgb(65, 65, 65);
+			}
+
+			@media screen and (max-width: 500px) {
+				.container {
+					margin-right: 12px;
+					margin-left: 12px;
+				}
+			}
+
+			.button {
+				width: 100%;
+				padding: 10px;
+				background-color: rgb(105, 150, 105);
+				border: 0;
+				color: white;
+				margin-bottom: 20px;
+				border: 1px solid black;
+				box-shadow: 0 0 3px black;
+			}
+
+			.button:hover {
+				background-color: rgb(61, 83, 61);
+			}
+
+			.container-texts {
+				background-color: rgb(163, 163, 163);
+				height: 400px;
+				overflow: auto;
+				border: 1px solid black;
+				box-shadow: 0 0 3px black;
+			}
+
+			.container-texts::-webkit-scrollbar {
+				-webkit-appearance: none;
+			}
+
+			.container-texts::-webkit-scrollbar {
+				width: 10px;
+			}
+
+			.container-texts::-webkit-scrollbar-thumb {
+				background-color: #585858;
+				border: 2px solid #fcfcfc;
+			}
+
+			.sections {
+				display: flex;
+				padding: 20px;
+				/* border: 1px solid black; */
+				/* La linea de aca arriba si la quitas podras ver como se van almacenando las secciones*/
+				margin-bottom: 20px;
+			}
+
+			hr {
+				margin: -10px 0 10px 0;
+			}
+
+			.text-large {
+				width: 60%;
+				margin-right: 20px;
+				text-align: left;
+			}
+
+			.text {
+				width: 45%;
+				text-align: left;
+			}
+
+			.input {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 380px) {
+				.sections {
+					flex-direction: column;
+				}
+				.text-large,
+				.text {
+					width: 100%;
+					margin-right: 0px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<div class="container">
+				<button class="button">Button</button>
+				<div class="container-texts">
+					<section class="sections">
+						<div class="text-large">
+							<p>Text Large</p>
+							<hr />
+							<input class="input" type="text" name="" id="" placeholder="Text" />
+						</div>
+						<div class="text">
+							<p>Text</p>
+							<hr />
+							<input class="input" type="tel" name="" id="" placeholder="Number" />
+						</div>
+					</section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+					<section class="sections"></section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
