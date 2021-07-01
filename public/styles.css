@@ -8,14 +8,14 @@
 
 body
 {
-    background-color: #f5f5ec;
-    color: #444;
+    background-color: #FFF;
+    color: #000;
 }
 
 nav
 {
-    background-color: darkred;
-    color:#f5f5ec;
+    background-color: 000;
+    color:#fff;
 }
 nav ul {
     list-style-type: none;
@@ -41,7 +41,7 @@ nav li a, .dropbtn {
 }
   
 nav li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: 000;
   
 }
   

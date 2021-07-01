@@ -2,6 +2,6 @@
 
 
 <?= $this->section('content') ?>
-    <h1>¡Aqui mi aplicación!</h1>
+    <h1>Membresías PDMU</h1>
 <?= $this->endSection() ?>
 
