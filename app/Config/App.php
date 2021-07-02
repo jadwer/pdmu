@@ -34,7 +34,7 @@ class App extends BaseConfig
 	
 	protected function setBaseUrl() {
 	if ($_SERVER['SERVER_NAME'] == 'localhost') {
-			$this->baseURL = 'http://localhost/';
+			$this->baseURL = 'http://localhost/pdmu/public';
 	} else {
 			$this->baseURL = 'https://pdmu.atomosoluciones.mx/';
 	}
