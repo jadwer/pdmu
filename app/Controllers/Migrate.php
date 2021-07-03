@@ -7,10 +7,13 @@ class Migrate extends \CodeIgniter\Controller
         public function index()
         {
                 $migrate = \Config\Services::migrations();
+                $seeder = \Config\Database::seeder();
 
                 try
                 {
-                        $migrate->latest();
+                        $result = $migrate->latest();
+                        d($result);
+                        $seeder->call('UsuarioSeeder');
                 }
                 catch (\Throwable $e)
                 {
