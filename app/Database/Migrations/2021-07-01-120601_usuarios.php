@@ -3,7 +3,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Productos extends Migration
+class Usuarios extends Migration
 {
         public function up()
         {
@@ -16,27 +16,27 @@ class Productos extends Migration
                         ],
                         'nombre'       => [
                                 'type'       => 'VARCHAR',
-                                'constraint' => '100',
+                                'constraint' => '255',
                         ],
-                        'precio'       => [
-                            'type'       => 'FLOAT',
-                            'constraint' => 5,
+                        'usuario'       => [
+                            'type'       => 'VARCHAR',
+                            'constraint' => '100',
                         ],
-                            'id_usuario'       => [
-                            'type'       => 'INT',
-                            'unsigned'       => true,
-                            'constraint' => 5,
+                        'password'       => [
+                            'type'       => 'VARCHAR',
+                            'constraint' => '100',
                         ],
-                            'creacion'       => [
-                            'type'       => 'timestamp',
+                        'type'       => [
+                            'type'       => 'VARCHAR',
+                            'constraint' => '100',
                         ],
                 ]);
                 $this->forge->addKey('id', true);
-                $this->forge->createTable('productos');
+                $this->forge->createTable('usuarios');
         }
 
         public function down()
         {
-                $this->forge->dropTable('productos');
+                $this->forge->dropTable('usuarios');
         }
 }

@@ -34,6 +34,12 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/migrar', 'Migrate::index');
+$routes->get('/home', 'Home::inicio');
+
+$routes->get('/login', 'Home::login');
+$routes->post('/login', 'Home::login_send');
+$routes->get('/logout', 'Home::logout');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

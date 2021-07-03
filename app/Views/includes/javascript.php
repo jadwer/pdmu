@@ -1,1 +1,1 @@
-<script type="text/javascript" src="<?=base_url()?>/assets/scripts.js"></script>
+<script type="text/javascript" src="<?=base_url('/assets/scripts/scripts.js')?>"></script>
